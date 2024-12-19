@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${imie}"></p>
+<p th:each="i : ${imiona}" th:text="${i}"></p>
+<p th:if="${imie.equals('Mateusz')}">Wylosowane imie to Mateusz !!</p>
+
+<div>
+  <dt>
+    <p></p>
+  </dt>
+</div>
+</body>
+</html>
